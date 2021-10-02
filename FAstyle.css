@@ -5,7 +5,6 @@ body {
     background-size:fill;
     background-repeat: repeat-x;
     position: absolute;
-    
 }
 div#container{
     position: absolute;
@@ -16,7 +15,4 @@ div#container{
 div#container div a{
     color: whitesmoke;
     font: 40px "Roboto Mono", monospace;
-}
-div#container div {
-    margin-left: 2%;
 }
