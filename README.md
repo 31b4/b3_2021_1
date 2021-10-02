@@ -1,2 +1,2 @@
 # BBB-1s-round
-asd
+https://bbb-1st-round.netlify.app/
