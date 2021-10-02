@@ -1,0 +1,52 @@
+
+body{
+    background-image: url(img/bck.gif);
+    background-size:fill ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    color: whitesmoke;
+    font: 40px "Roboto Mono", monospace;
+    text-align: center;
+}
+div#menu{
+    width: 100%;
+    height: 600px;
+    /*background-color: red;*/
+}
+
+div#menu div{
+    transition: background-color .5s ease-out;
+    background-color: #585858;
+    height:300px; 
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: outset;
+    border-radius: 5px;
+    border-width: 5px; 
+}
+div#menu div:hover{
+    transition: background-color .5s ease-out;
+    background-color: black;
+}
+
+#elso{
+    float: left;
+    margin-left: 10%;
+}
+
+p{
+    color: whitesmoke;
+    text-align: center;
+
+}
+p.cim{
+    font: 30px "Roboto Mono", monospace;
+}
+
+#masodik{
+    float: right;
+    margin-right: 10%;
+}
