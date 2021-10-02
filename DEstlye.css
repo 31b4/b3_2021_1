@@ -11,19 +11,24 @@ div#container{
     position: fixed;
     width: 100%;
     height: 30px;
-    position: fixed;
     padding-top: 5px;
     top: 0px;
     background-color: #0e1212;
+    display: flex;
+    justify-content: left;
 }
-div#container a{
+div#container div a{
     color: whitesmoke;
     font: 20px "Roboto Mono", monospace;
-    margin-left: 2%;
+    /*margin-left: 2%;*/
 }
-div#container a#center{
-    margin-left: 34%;
+
+div#container div#left{
+   margin-right: 41%;
+   margin-left: 2%;
 }
+
+
 div#mainbox{
     width: 80%;
     margin-top: 10%;
@@ -34,9 +39,6 @@ div#mainbox{
     margin-right: 10%;
     padding: 50px;
 } 
-
-
-
 div#tagok{
     margin-left: 10%;
     height: 30%;
