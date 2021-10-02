@@ -32,13 +32,14 @@ div#mainbox{
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 20px;
+    padding: 50px;
 } 
 
 
 
 div#tagok{
     margin-left: 10%;
+    height: 30%;
 }
 div#tagok div{
     width: 15%;
