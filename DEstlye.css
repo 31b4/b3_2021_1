@@ -7,28 +7,35 @@ body {
     
 }
 
-div#container{
-    position: fixed;
-    width: 100%;
-    height: 30px;
-    padding-top: 5px;
-    top: 0px;
-    background-color: #0e1212;
-    display: flex;
-    justify-content: left;
-}
+
 div#container div a{
+    transition: color .2s ease-out;
     color: whitesmoke;
     font: 20px "Roboto Mono", monospace;
     /*margin-left: 2%;*/
 }
 
-div#container div#left{
-   margin-right: 41%;
-   margin-left: 2%;
+
+#container{
+    width:100%;
+    height: 30px;
+    top: 0px;
+    padding-top: 5px;
+    background-color: #0e1212;
 }
-
-
+#left{
+    float:left;width:100px;
+    padding-left: 2%;
+}
+#left a:hover{
+    transition: color .2s ease-out;
+    color: #B80F0A;
+}
+#right{
+    float:right;width:100px;
+    
+}
+#center{margin:0 auto;width:100px;}
 div#mainbox{
     width: 80%;
     margin-top: 10%;
@@ -37,16 +44,17 @@ div#mainbox{
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 50px;
+    padding: 2%;
 } 
 div#tagok{
     margin-left: 10%;
     height: 30%;
+    margin-bottom: 20%;
 }
 div#tagok div{
     width: 15%;
     float: left;
-    margin-right:10%;
+    margin-right:18%;
     text-align: center;
     
 }
@@ -63,4 +71,15 @@ div#tagok ul{
 div#mainbox a{
     font: 15px "Roboto Mono", monospace;
     color: black;
+}
+
+#iskola:hover {
+    color:rgb(255, 0, 0);
+    transition: color .1s ease-out;
+}
+
+#ido 
+{
+    float: right;
+    color:lightgray;
 }
