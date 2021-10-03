@@ -1,0 +1,172 @@
+body{
+    background-color: #0e1212;
+}
+
+div#introduction ul p{
+    color: #808080;
+    font: 19px "Roboto Mono", monospace;
+    text-align: left;
+    margin: 2;
+    font-family: monospace;
+    
+}
+div#introduction ul p#darker{
+    color: #585858;
+}
+
+div#introduction ul h1{
+    color: whitesmoke;
+    
+    text-align: left;
+    font: 64px "Roboto Mono", monospace;
+    margin: 0;
+    font-weight: bold;
+    font-family: monospace;
+   
+}
+div#introduction {
+    width: auto;
+    margin-top: 10%;
+    margin-left: 25%;
+
+}
+ul#menu{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 20%;
+   
+}
+ul#menu li {
+    float: left;
+
+}
+ul#menu li a {
+    padding: 10px;
+    display: block;
+    font: 19px "Roboto Mono", monospace;
+    text-decoration: none;
+    transition: color .5s ease-out;
+    color: whitesmoke;
+}
+
+ul#menu li img {
+    width: 25px;
+}
+ul#menu li :hover{
+    transition: color .5s ease-out;
+    color: #B80F0A;
+}
+div#container{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    padding-top: 5px;
+    top: 0px;
+    background-color: #0e1212;
+}  
+
+
+ul#felsorolas {
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+ul#menu li#on :hover{
+    transition: color .5s ease-out;
+    color: #B80F0A;
+}
+div#container ul li#on a{
+    transition: color .5s ease-out;
+    color: #606060 ;
+}
+div#container a#cim {
+    display: block;
+    position:static;
+    font: 25px "Roboto Mono", monospace;
+    text-decoration: none;
+    color: #B80F0A;
+    margin-left: 20%;
+    padding: 10px;
+}
+div#works{
+    height: 700px;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+div#works ul#theApp li{
+    width: auto;
+    
+    font: 19px "Roboto Mono", monospace;
+    color: #808080;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    margin-right: 10px;
+}
+div#works ul#theApp li#name{
+    color: whitesmoke;
+    text-align: left;
+    font: 64px "Roboto Mono", monospace;
+    
+    font-weight: bold;
+    font-family: monospace;
+   
+}
+div#works ul#theApp li#darker{
+    color: #B80F0A;
+}
+div#contact{
+    width: auto;
+    margin-top: 200px;
+    text-align: center;
+    font: 22px "Roboto Mono", monospace;
+    text-decoration: none;
+    color: #808080;
+
+}
+div#contact a{
+    text-decoration: none;
+    transition: color .5s ease-out;
+    color: #808080;
+}
+div#contact a:hover{
+    transition: color .5s ease-out;
+    color: whitesmoke;
+}
+.boxes{
+    width: 90%;
+    overflow: hidden;
+    margin: 10% auto;
+    /*background-color: yellow;*/
+    padding: 20px;
+}
+.boxes ul {
+    padding: 0px;
+    margin-left: 20%;
+}
+.boxes ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    height: 250px;
+    /*background:red;*/
+    margin: 0px 0px 0px 60px;
+}
+.boxes ul li p{
+    color: #808080;
+    font: 22px "Roboto Mono", monospace;
+}
+.boxes a{
+    margin-left: 20%;
+    color: whitesmoke;
+    font: 30px "Roboto Mono", monospace;
+}
+.boxes ul li p.cim{
+    color: #B80F0A;
+}
