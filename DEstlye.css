@@ -42,8 +42,7 @@ div#mainbox{
     margin-bottom: 10%;
     background-color:rgba(101, 216, 245, 0.308);
     border-radius: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto auto;
     padding: 2%;
 } 
 div#tagok{
