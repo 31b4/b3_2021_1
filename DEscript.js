@@ -7,3 +7,4 @@ function pontosIdo() {
     var t=d.toLocaleTimeString();
     document.getElementById("ido").innerHTML=t;
 }
+/*https://getbootstrap.com/docs/5.1/layout/grid/*/
