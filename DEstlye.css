@@ -33,7 +33,7 @@ div#container div a{
 }
 #right{
     float:right;width:100px;
-    padding-right: 2%;
+    
 }
 #center{margin:0 auto;width:100px;}
 div#mainbox{
@@ -41,32 +41,27 @@ div#mainbox{
     background-color:rgba(101, 216, 245, 0.308);
     border-radius: 10px;
     margin: auto auto;
-    padding: 2%;
     margin-top: 10%;
     margin-bottom: 10%;
+    padding: 2%;
 } 
-div#tagok{
-    margin-left: 10%;
-    height: 30%;
-    margin-bottom: 20%;
+
+
+.carousel-inner div img{
+    width: 50%;
 }
 div#tagok div{
-    width: 15%;
-    float: left;
-    margin-right:18%;
+
     text-align: center;
-    
+}
+div#tagok div img{
+    width: 50%;
 }
 div#mainbox img{
     border-radius: 7px;
 }
-div#tagok ul{
-    list-style: none;
-    padding: 0;
-    margin-right:0;
-    float: right;
-    
-}
+
+
 div#mainbox a{
     font: 15px "Roboto Mono", monospace;
     color: black;

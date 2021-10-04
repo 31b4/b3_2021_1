@@ -1,64 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>debugentity</title>
-    <link rel="stylesheet" href="DEstlye.css">
-    <script src="DEscript.js"></script>
-</head>
-<body>
-
-    
-    <div id="container">
-        <div id="left"><a href="index.html">.vissza()</a></div>
-        <div id="right"><a><span id="ido"></span></a></div>
-        <div id="center"><a>Debug_Entity</a></div>
-    </div>
-    
-    <div id="mainbox">
-        <h1>Magunkról</h1>
-        <p>A Ceglédi SZC Közgazdasági és Informatikai Technikum 11. évfolyamos tanulói vagyunk és mi vagyunk a Debug Entity csapat.</p>
-        <h2>Tagok :</h2>
-
-        <div id="tagok">
-            <ul>
-                <li>
-                    <div>
-                        <img  src="img/armin.jpg" style="width: 100%;"></img>
-                        <p>Kiss Ármin</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img  src="img/armin.jpg" style="width: 100%;"></img>
-                        <p>Szilágyi Bence</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img  src="img/dani.jpg" style="width: 100%;"></img>
-                        <p>Nyeste Dániel</p>
-                    </div>
-                </li>
-            </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>debugentity</title>
+        <script src="DEscript.js"></script>
+        <!---------Bootsrap----------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <!----------------------------->
+        <link rel="stylesheet" href="DEstlye.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="left"><a href="index.html">.vissza()</a></div>
+            <div id="right"><a><span id="ido"></span></a></div>
+            <div id="center"><a>Debug_Entity</a></div>
         </div>
-        <br>
-        <h2>Felkészítő tanár: </h2>
-        <p>Szabó Emánuel</p>
-        <h2>Iskolánk:</h2>
-        <a href="http://www.ckik.hu/" target="new" id="iskola">Ceglédi SZC Közgazdasági és Informatikai Technikum</a><br>
-        <img src="img/ckik.jpg" alt="Sulink kepe." style="width: 50%;">
         
-     
- 
+        <div id="mainbox">
+            <h1>Magunkról</h1>
+            <p>A Ceglédi SZC Közgazdasági és Informatikai Technikum 11. évfolyamos tanulói vagyunk és mi vagyunk a Debug Entity csapat.</p>
+            <h2>Tagok :</h2>
+            
+            <div class="row" id="tagok">
+                <div class="col">
+                    <img  src="img/armin.jpg" ></img>
+                     <!-- Button trigger modal -->
+                    <button type="button" class="!?!?!?!?!?!?!?" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Kiss Ármin
+                    </button>
+                                        
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Kiss Ármin</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">                        
+                            cs
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>                                    
+                </div>
+
+                <div class="col">
+                    <img  src="img/armin.jpg" ></img>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="!?!?!?!?!?!?!?" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Szilágyi Bence
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Szilágyi Bence</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">                        
+                            sziaszitok
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col" class="modal-dialog modal-dialog-centered">
+                    <img  src="img/dani.jpg" ></img>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="!?!?!?!?!?!?!?" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Nyeste Dániel
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Nyeste Dániel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">                        
+                            ...
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>                   
+                    
+                </div>
+                </div>
+           
+            <br>
+            <h2>Felkészítő tanár: </h2>
+            <p>Szabó Emánuel</p>
+            <h2>Iskolánk:</h2>
+            <a href="http://www.ckik.hu/" target="new" id="iskola">Ceglédi SZC Közgazdasági és Informatikai Technikum</a><br>
+            <img src="img/ckik.jpg" alt="Sulink kepe." style="width: 50%; margin-bottom:10% ;">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="slideShowKepek">
+                  <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="..." >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        
+              <div class="modal-dialog modal-dialog-centered">
+                ...
+              </div>
 
 
 
 
-    </div>
-    
-    <script src="DEscript.js"></script>
-</body>
+        </div>
+        
+        <script src="DEscript.js"></script>
+    </body>
 </html>
