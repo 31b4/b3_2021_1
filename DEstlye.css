@@ -45,7 +45,10 @@ div#mainbox{
     margin-bottom: 10%;
     padding: 2%;
 } 
-
+div#mainbox {
+    font: 18px "Roboto Mono", monospace;
+    color: rgb(0, 0, 0);
+}
 
 .carousel-inner div img{
     width: 50%;
@@ -76,4 +79,7 @@ div#mainbox a{
 {
     float: right;
     color:lightgray;
+}
+.modal fade{
+    background-color: tomato;
 }
