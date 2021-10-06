@@ -20,7 +20,7 @@ div#menu{
 div#menu div{
     transition: background-color .5s ease-out;
     background-color: #585858;
-    height:300px; 
+    height:auto; 
     width: 30%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -33,7 +33,7 @@ div#menu div:hover{
     background-color: black;
 }
 div#menu p{
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 #elso{
     float: left;
