@@ -79,14 +79,15 @@ function JoFilmek(kivanatosTipus,lehetHogyJo) {
 function KiIras(ajanlottFilmek) {
     var filmDiv = document.getElementById("ajanlottFilmek")
     for (let i = 0; i < ajanlottFilmek.length; i++) {
-        var p = document.createElement("p");
-        p.style.fontSize="20px";
-        p.innerHTML=ajanlottFilmek[i].name;
-        filmDiv.appendChild(p);
+        var div = document.createElement("div")
+        div.className="row";
+        div.style.fontSize="20px";
+        div.innerHTML="<div class='col'>"+ajanlottFilmek[i].name + "</div> <div class='col'> " + ajanlottFilmek[i].date+"</div>";
+        filmDiv.appendChild(div);
     }
 }
 function Kereses () {
-    document.getElementById("ajanlottFilmek").innerHTML="";
+    document.getElementById("ajanlottFilmek").innerHTML="<h2>Ajanlott filmek: </h2>";
     var kivantTipus = new Array();
     var nemKivantTipus = new Array();
     kivantTipus = TipusKereses("id");
