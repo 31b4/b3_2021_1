@@ -16,33 +16,52 @@
 
 </head>
 <body>
-    <div id="container">
-        <div id="left"><a href="index.html">.vissza()</a></div>
+    <div id="back">
+        <div><a href="index.html">.vissza()</a></div>
     </div>
-    <div id="mainbox">
-        <form action="/action_page.php">
-            <h2>Típusok:</h2>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> Drama</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Romantika</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Vigjatek</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Horror</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Animacio</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Akcio</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Sci-fi</label><br>
-            <h2>Év:</h2>
-            <input type="number" min="2000" max="2022" step="1" value="2016" />
-            <h2>Név:</h2>
-            <input type="text" id="fname" name="fname" value="" placeholder="film név"><br>
-        </form> 
-
+    <div class="row" id="mainbox" >
+        <div class="col">
+                <form action="/action_page.php">
+                    <h2>Kívánt típusok:</h2>
+                    <input type="checkbox" id="id0" name="vehicle1" value="drama">
+                    <label for="vehicle1"> Drama</label><br>
+                    <input type="checkbox" id="id1" name="vehicle2" value="romantika">
+                    <label for="vehicle2"> Romantika</label><br>
+                    <input type="checkbox" id="id2" name="vehicle3" value="vigjatek">
+                    <label for="vehicle3"> Vigjatek</label><br>
+                    <input type="checkbox" id="id3" name="vehicle3" value="horror">
+                    <label for="vehicle3"> Horror</label><br>
+                    <input type="checkbox" id="id4" name="vehicle3" value="animacio">
+                    <label for="vehicle3"> Animacio</label><br>
+                    <input type="checkbox" id="id5" name="vehicle3" value="akcio">
+                    <label for="vehicle3"> Akcio</label><br>
+                    <input type="checkbox" id="id6" name="vehicle3" value="sci-fi">
+                    <label for="vehicle3"> Sci-fi</label><br>
+                    <input type="button" value="Keresés" onclick="Kereses()">
+                </form> 
+            </div>
+        <div class="col">
+            <form action="/action_page.php">
+                <h2>NEM kívánt típusok:</h2>
+                <input type="checkbox" id="noid0" name="vehicle1" value="drama">
+                <label for="vehicle1"> Drama</label><br>
+                <input type="checkbox" id="noid1" name="vehicle2" value="romantika">
+                <label for="vehicle2"> Romantika</label><br>
+                <input type="checkbox" id="noid2" name="vehicle3" value="vigjatek">
+                <label for="vehicle3"> Vigjatek</label><br>
+                <input type="checkbox" id="noid3" name="vehicle3" value="horror">
+                <label for="vehicle3"> Horror</label><br>
+                <input type="checkbox" id="noid4" name="vehicle3" value="animacio">
+                <label for="vehicle3"> Animacio</label><br>
+                <input type="checkbox" id="noid5" name="vehicle3" value="akcio">
+                <label for="vehicle3"> Akcio</label><br>
+                <input type="checkbox" id="noid6" name="vehicle3" value="sci-fi">
+                <label for="vehicle3"> Sci-fi</label><br>
+            </form>
+        </div>
     </div>
-      
+    <div id="ajanlottFilmek">
+        <h2>Ajanlott filmek: </h2>
+    </div>
 </body>
 </html>

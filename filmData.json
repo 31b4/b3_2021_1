@@ -1,0 +1,74 @@
+[
+    {//0
+        "name": "Jégvarázs",
+        "date": "2013",
+        "type":[
+            "vigjatek",
+            "animation",
+            "drama"
+        ]
+    },
+    {//1
+               
+        "name": "Másnaposok",
+        "date": "2009",
+        "type":[
+            "vigjatek"
+        ]
+    },
+    
+    {//2
+        "name": "Verdák",
+        "date": "2006",
+        "type":[
+            "vigjatek",
+            "animation"
+        ]
+    },
+
+    {//3
+        "name": "Démonok között",
+        "date": "2013",
+        "type":[
+            "horror"
+        ]
+    },
+
+    {//4
+        "name": "Vissza a jövőbe",
+        "date": "1985",
+        "type":[
+            "vigjatek",
+            "sci-fi"
+        ]
+    },
+
+    {//5
+        "name": "Éhezők viadala",
+        "date": "2012",
+        "type":[
+            "sci-fi",
+            "akcio",
+            "drama"
+        ]
+    },
+
+    {//6
+        "name": "Miután",
+        "date": "2019",
+        "type":[
+            "romantika",
+            "drama"
+        ]
+    },
+
+    {//7
+        "name": "Pókember: Idegenben",
+        "date": "2019",
+        "type":[
+            "akcio",
+            "sci-fi",
+            "vigjatek"
+        ]
+    }
+]
