@@ -21,7 +21,7 @@ function CheckRemove() {
 }
 function AzonosType(kivantTipus,nemKivantTipus){
     for (let i = 0; i < kivantTipus.length; i++) {
-        for (let j = i; j < nemKivantTipus.length; j++) {
+        for (let j = 0; j < nemKivantTipus.length; j++) {
             if (kivantTipus[i]==nemKivantTipus[j]) {
                 alert("Ne legyen azonos a kívánt és nem kívánt típusok között :)");
                 CheckRemove();
