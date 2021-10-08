@@ -1,7 +1,7 @@
-filmek='[{"name":"Jégvarázs","date":"2013","type":["vigjatek","animacio","drama"]},{"name":"Másnaposok","date":"2009","type":["vigjatek"]},{"name":"Verdák","date":"2006","type":["vigjatek","animacio"]},{"name":"Démonok között","date":"2013","type":["horror"]},{"name":"Vissza a jövőbe","date":"1985","type":["vigjatek","sci-fi"]},{"name":"Az Éhezők viadala","date":"2012","type":["sci-fi","akcio","drama"]},{"name":"Miután","date":"2019","type":["romantika","drama"]},{"name":"Pókember: Idegenben","date":"2019","type":["akcio","sci-fi","vigjatek"]},{"name":"Venom","date":"2018","type":["akcio","sci-fi"]},{"name":"007 Nincs idő meghalni","date":"2021","type":["akcio"]},{"name":"Miután elbuktunk","date":"2021","type":["romantika","drama"]},{"name":"Éjszaka a házban","date":"2020","type":["horror"]},{"name":"Mancsőrjárat: A film","date":"2021","type":["animacio"]},{"name":"A feleségem története","date":"2021","type":["romantika","drama"]},{"name":"Eleven kór","date":"2021","type":["horror"]},{"name":"Notting Hill-i cukrászda","date":"2021","type":["romantika","drama"]},{"name":"Kampókéz","date":"2021","type":["horror"]},{"name":"85 Nyara","date":"2020","type":["romantika","drama"]}]'
-var mydata = JSON.parse(filmek);
+filmek='[{"name":"Jégvarázs","date":"2013","type":["vigjatek","animacio","drama"]},{"name":"Másnaposok","date":"2009","type":["vigjatek"]},{"name":"Verdák","date":"2006","type":["vigjatek","animacio"]},{"name":"Démonokközött","date":"2013","type":["horror"]},{"name":"Visszaajövőbe","date":"1985","type":["vigjatek","sci-fi"]},{"name":"Éhezőkviadala","date":"2012","type":["sci-fi","akcio","drama"]},{"name":"Miután","date":"2019","type":["romantika","drama","sex,softporn"]},{"name":"Pókember:Idegenben","date":"2019","type":["akcio","sci-fi","vigjatek"]}]'
+var mydata = JSON.parse(filmek);//main adat tarolo
 
-function TipusKereses(id){
+function TipusKereses(id){//Bemeno adatok beolvasasa
     let kivantTipusSV = new Array();
     for (let i = 0; i < 7; i++) {
         let checkBox = document.getElementById(id+i);
@@ -11,7 +11,7 @@ function TipusKereses(id){
     }
     return kivantTipusSV;
 }
-function CheckRemove() {
+function CheckRemove() {//check boxok false-a tetele
     for (let i = 0; i < 7; i++) {
         let checkBox1 = document.getElementById("id"+i);
         let checkBox2 = document.getElementById("noid"+i);
@@ -19,17 +19,19 @@ function CheckRemove() {
         checkBox2.checked = false;
     }
 }
-function AzonosType(kivantTipus,nemKivantTipus){
+function AzonosType(kivantTipus,nemKivantTipus){//azonos tipusok deaktivalasa
     for (let i = 0; i < kivantTipus.length; i++) {
         for (let j = 0; j < nemKivantTipus.length; j++) {
             if (kivantTipus[i]==nemKivantTipus[j]) {
                 alert("Ne legyen azonos a kívánt és nem kívánt típusok között :)");
                 CheckRemove();
+                return true;
             }
         }
     }
+    return false;
 }
-function FilmekKizarasa(mydata,kivanatosTipus, nemKivantTipus) {
+function FilmekKizarasa(mydata,kivanatosTipus, nemKivantTipus) {//rossz filmek kizarasa
     var lehetHogyJo = new Array();
     for (let i = 0; i < mydata.length; i++) {
         var kilep = false;
@@ -52,7 +54,7 @@ function FilmekKizarasa(mydata,kivanatosTipus, nemKivantTipus) {
     //console.log(lehetHogyJo);
     JoFilmek(kivanatosTipus,lehetHogyJo);
 }
-function JoFilmek(kivanatosTipus,lehetHogyJo) {
+function JoFilmek(kivanatosTipus,lehetHogyJo) {// jo/ajanlott filmek lementese
     var ajanlottFilmek = new Array();
     for (let i = 0; i < lehetHogyJo.length ; i++) {
         for (let j = 0; j < kivanatosTipus.length; j++) {
@@ -69,14 +71,9 @@ function JoFilmek(kivanatosTipus,lehetHogyJo) {
             }
         }
     }
-    /*
-        for (let i = 0; i < ajanlottFilmek.length; i++) {
-            console.log("vegleges "+ajanlottFilmek[i].name);
-        }
-    */
     KiIras(ajanlottFilmek);
 }
-function KiIras(ajanlottFilmek) {
+function KiIras(ajanlottFilmek) {//Vegleges megjelenites
     var filmDiv = document.getElementById("ajanlottFilmek")
     for (let i = 0; i < ajanlottFilmek.length; i++) {
         var div = document.createElement("div")
@@ -86,16 +83,13 @@ function KiIras(ajanlottFilmek) {
         filmDiv.appendChild(div);
     }
 }
-function Kereses () {
+function Kereses () {//main function 
     document.getElementById("ajanlottFilmek").innerHTML="<h2>Ajanlott filmek: </h2>";
     var kivantTipus = new Array();
     var nemKivantTipus = new Array();
-    kivantTipus = TipusKereses("id");
-    nemKivantTipus = TipusKereses("noid");
-    /*
-    console.log("kivant:::::"+kivantTipus);
-    console.log("NEMkivant:::::"+nemKivantTipus);
-    */
-    AzonosType(kivantTipus,nemKivantTipus);
-    FilmekKizarasa(mydata,kivantTipus,nemKivantTipus);
+    kivantTipus = TipusKereses("id");//feltoltes
+    nemKivantTipus = TipusKereses("noid");//feltoltes
+    if (!AzonosType(kivantTipus,nemKivantTipus)) {//
+        FilmekKizarasa(mydata,kivantTipus,nemKivantTipus);
+    }   
 }
