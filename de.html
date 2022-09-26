@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debugentity</title>
+    
+    <!---------Bootsrap----------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <!----------------------------->
+    
+    <!---------jQuery----------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-------------------------->
+
+    <link rel="stylesheet" href="de.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left"><a href="../index.html">menu</a></div>
+        <div id="right"><a><span id="ido"></span></a></div>
+        <div id="center"><h1>Debug<span>Entity</span></h1></div>
+    </div>
+    <div id="mainbox">
+        <div id="bemutatkozas">
+            <h1>Magunkról:</h1>
+            <p>A Ceglédi SZC Közgazdasági és Informatikai Technikum 12. évfolyamos tanulói vagyunk és mi vagyunk a Debug Entity csapat. Szeretünk alkotni, létrehozni új dolgokat és nehezebb feladatokon szenvedni.</p>
+        </div>
+        <h2>Tagok :</h2>
+        <div class="row" id="tagok">
+
+            <div class="col">
+                <img  src="img/nyitrai.jpg" ></img><br><br>
+                    <!-- Button trigger modal -->
+                <button class="nevGombok" type="button" data-bs-toggle="modal" data-bs-target="#Nyitrai">
+                    Nyitrai Dániel
+                </button>                  
+                <!-- Modal -->
+                <div class="modal fade" id="Nyitrai">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Nyitrai Dániel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">                        
+                            <p>/*-----adatok-----*/</p>
+                            <p>kor = 18</p>
+                            <p>kedvenc_program_nyelvei = [c#, js]</p>
+                            <p>hobbik= [autozgatás, clash_royale, szórakozas_baratokkal, sorozatnézes, zene hallgatás] </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                        </div>
+                    </div>
+                    </div>
+                </div>                                    
+            </div>
+
+            <div class="col">
+                <img  src="img/bence.jpg" ></img> <br><br>
+                <!-- Button trigger modal -->
+                <button class="nevGombok" type="button" data-bs-toggle="modal" data-bs-target="#Szilágyi">
+                    Szilágyi Bence
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="Szilágyi">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Szilágyi Bence</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" >                        
+                            <p>/*-----adatok-----*/</p>
+                            <p>kor = 17</p>
+                            <p>kedvenc_program_nyelvei = [py, c#]</p>
+                            <p>hobbik = [programozas, macska_etetes, sakkozás]</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                        </div>
+                    </div>
+                    </div>
+                </div>                    
+            </div>
+
+            <div class="col">
+                <img  src="img/dani.jpg" ></img> <br><br>
+                <!-- Button trigger modal -->
+                <button class="nevGombok" type="button" data-bs-toggle="modal" data-bs-target="#Nyeste">
+                    Nyeste Dániel
+                </button>
+                <!-- Modal -->
+                <div  class="modal fade" id="Nyeste">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Nyeste Dániel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">                        
+                            <p>/*-----adatok-----*/</p>
+                            <p>kor = 19 </p>
+                            <p>kedvenc_program_nyelvei = [c#, js] </p>
+                            <p>hobbik = [motorozás, társasozás, baratokkal_való_találkozás, sorozatnézés, zongorázás] </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                        </div>
+                    </div>
+                    </div>
+                </div>                   
+            </div>
+        </div>
+
+        <br>
+        <h2>Felkészítő tanár: </h2>
+        <p>Szabó Emánuel</p>
+
+        <h2>Iskolánk:</h2>
+        <a href="http://www.ckik.hu/" target="new" id="iskola">Ceglédi SZC Közgazdasági és Informatikai Technikum</a><br>
+        <img src="img/ckik.jpg" alt="Sulink kepe." style="width: 50%; margin-bottom:10% ;">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">        
+            <div class="carousel-inner" id="slideShowKepek">
+                <div class="carousel-item active">
+                <img src="img/1.png" class="d-block w-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                <img src="img/2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>                  
+
+
+    </div>
+    <script src="DEscript.js"></script>
+</body>
+</html>
